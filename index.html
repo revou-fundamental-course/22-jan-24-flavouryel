@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Grocery</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <nav class="navigation-grocery">
+        <img src="assets/logo.jpg" alt="logo" class="logo">
+        <ul class="navigation-items">
+            <li><a>Home</a></li>
+            <li><a>Our product</a></li>
+            <li><a>Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1> halo selamat datang di Situs belanja kami </h1>
+        <h3>Toko nomor satu di Wakanda</h3>
+        <div>
+            <img
+            class="img-slideshow"
+            src="assets/slideshow.jpg"
+            />
+            <img
+            class="img-slideshow"
+            src="assets/slideshow2.jpg"
+            />
+            <img
+            class="img-slideshow"
+            src="assets/slideshow3.jpg"
+            />
+        </div>
+    </header>
+    <div class="container">
+        <form name="message-form" onsubmit="return validateForm();">
+
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="firstname"
+            placeholder="Your name...">
+            <p id="fname-error"></p>
+
+            <label for="lname">last name</label>
+            <input type="text" id="lname" name="lastname"
+            placeholder="Your name...">
+            <p id="lname-error"></p>
+
+            <label for="Phone">Phone number</label>
+            <input type="text" id="Phone" name="Phonenumber"
+            placeholder="Your number...">
+            <p id="phone-error"></p>
+
+            <input type="submit" value="submit">
+
+        </form>
+    </div>
+    <h1>OUR PRODUCT</h1>
+    <div class="Our-product">
+        <div>
+            <div class="circle"><img src="assets/merah.png" /></div>
+            <p>Terdapat berbagai pala gundam</p>
+        </div>
+        <div>
+            <div class="circle"><img src="assets/pala robot.jpg" /></div>
+            <p>Terdapat berbagai lego</p>
+        </div>
+        <div>
+            <div class="circle"><img src="assets/gajah.jpg" /></div>
+            <p>Terdapat berbagai pala figure</p>
+        </div>
+    </div>
+    <div class="Our-product">
+        <div>
+            <div class="circle"><img src="assets/merah.png" /></div>
+            <p>Terdapat berbagai pala gundam</p>
+        </div>
+        <div>
+            <div class="circle"><img src="assets/pala robot.jpg" /></div>
+            <p>Terdapat berbagai lego</p>
+        </div>
+        <div>
+            <div class="circle"><img src="assets/gajah.jpg" /></div>
+            <p>Terdapat berbagai pala figure</p>
+        </div>
+    </div>
+
+
+    <div class="inquiry-customer">
+        <form class="inquiry-form">
+            <label for="name">name</label>
+            <input type="text" id="name">
+        </form> 
+        <div class="output">
+            <!-- put your output in here -->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

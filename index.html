@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body>
+<body id="body">
     <nav class="navigation-grocery">
         <img src="assets/logo.jpg" alt="logo" class="logo">
         <ul class="navigation-items">
-            <li><a>Home</a></li>
-            <li><a>Our product</a></li>
+            <li><a href="#body">Home</a></li>
+            <li><a href="#Our-product">Our product</a></li>
             <li><a>Contact Us</a></li>
         </ul>
     </nav>
     <header>
-        <h1> halo selamat datang di Situs belanja kami </h1>
-        <h3>Toko nomor satu di Wakanda</h3>
+        <div id="header-text">
+            <h1> halo selamat datang di Situs belanja kami</h1>
+            <h3>Toko nomor satu di Wakanda</h3>
+        </div>
         <div>
             <img
             class="img-slideshow"
@@ -35,6 +37,7 @@
         </div>
     </header>
     <div class="container">
+        <div class="form-name">
         <form name="message-form" onsubmit="return validateForm();">
 
             <label for="fname">First name</label>
@@ -53,11 +56,11 @@
             <p id="phone-error"></p>
 
             <input type="submit" value="submit">
-
         </form>
+        </div>
     </div>
     <h1>OUR PRODUCT</h1>
-    <div class="Our-product">
+    <div class="Our-product" id="Our-product">
         <div>
             <div class="circle"><img src="assets/merah.png" /></div>
             <p>Terdapat berbagai pala gundam</p>

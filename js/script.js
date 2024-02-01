@@ -5,21 +5,29 @@ function validateForm() {
 
     if (fname == "" || lname == "" || phone == "") {
         if (fname == "") {
-            document.getElementById("fname-error").innerHTML = "tidak boleh kosong";
-
+            document.getElementById("fname-error").innerHTML = "gaboleh kosong ya manis";
+        } else {
+            document.getElementById("fname-error").innerHTML = "";
         }
         
         if (lname == "") {
-            document.getElementById("lname-error").innerHTML = "tidak boleh kosong";
-
+            document.getElementById("lname-error").innerHTML = "yang ini juga jangan kosong";
+        } else {
+            document.getElementById("lname-error").innerHTML = "";
         }
         
         if (phone == "") {
-            document.getElementById("phone-error").innerHTML = "tidak boleh kosong";
-
+            document.getElementById("phone-error").innerHTML = "isi ya biar bisa aku call";
+        } else {
+            document.getElementById("phone-error").innerHTML = "";
         }
+
         return false;
     }
+    alert('SUKSES');
+    alert('THANKS');
+    alert('WOPYU');
+    alert('BYEEE');
 }
 
 var slideindex = 1;
@@ -34,7 +42,6 @@ function showDivs(n) {
     var imglist = document.getElementsByClassName("img-slideshow");
     if (n > imglist.length) slideindex = 1;
     else if (n < 1) slideindex = imglist.length;
-    console.log(slideindex);
     
     for (i = 0; i < imglist.length; i++) {
         imglist[i].style.display ="none";
@@ -44,6 +51,6 @@ function showDivs(n) {
 }
 
 setInterval(() => {
-plusDivs(1);
+    plusDivs(1);
 }, 2000)
  

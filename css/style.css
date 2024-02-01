@@ -1,15 +1,14 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
 }
 
 .navigation-grocery {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
-
+ 
 .logo {
     width: 70px;
     height: 70px;
@@ -17,8 +16,11 @@ body {
 }
 
 .navigation-grocery {
-    background-color: black;
+    background-color: rgba(168, 168, 130, 0.4);
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navigation-grocery li {
@@ -32,7 +34,7 @@ body {
 
 .navigation-grocery li:hover {
     background: #ddd;
-    color: black;
+    color: transparent;
 }
 
 .navigation-grocery li.split {
@@ -48,40 +50,66 @@ body {
 .navigation-items li {
     display: inline;
     margin-right: 16px;
-    border: 4px solid rgb(0, 0, 0);
-}
+}   
 
 header, h1 {
     text-align: center;
 }
 
-header div {
-    display: flex;
-    justify-content: center;
+#header-text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
 }
 
 header img {
-    height: 250px;
-    width: 500px;    
+    width: 100%;    
 }
 
 input {
-    width: 100%;
+    text-align: center;
+    width: 200px;    
     padding: 12px;
     border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical; 
 }
 
+.form-name {
+    width: 250px;
+    margin: auto;
+    border: 10px solid blanchedalmond;
+    border-radius: 10%;
+    padding: 20px;
+
+}
+
+form  {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
 input[type='submit'] {
+    text-align: center;
     background-color: #43463d;
     color: aliceblue;
     padding: 12px 20px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+#fname-error, #lname-error, #phone-error {
+    background-color: red;
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .submit :hover {
@@ -96,6 +124,7 @@ input[type='submit'] {
 
 .Our-product div {
     text-align: center;
+    justify-content: center;
 }
 
 .circle img {
@@ -121,6 +150,9 @@ input[type='submit'] {
 }
 
 @media only screen and (max-width: 600px) {
+    header {
+        margin-top: 200px;
+    }
     .navigation-grocery {
         flex-direction: column;
     }
